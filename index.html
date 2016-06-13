@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Web Development Template</title>
+    <title>Places you've been</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 
     <!-- Bootstrap core CSS -->
@@ -30,6 +30,7 @@
 
   <body>
     <div class="container">
+      <div class="col-sm-8 col-sm-offset-2">
       <h1>Places You've Been</h1>
       <div id="blanks">
         <form id="new-place">
@@ -53,14 +54,14 @@
           <button type="submit" class="btn">Display my info, baby!</button>
         </form>
       </div>
-
+      <div class="col-sm-6">
       <div id="places-output">
-        <h1>Your Place</h1>
-          <ul class="placeslist">
+        <h2>Your Place</h2>
+          <ul class="placeslist list-group">
           </ul>
       </div>
-
-      <!-- <div class="col-md-6"> -->
+    </div>
+      <div class="col-sm-6">
           <div id="show-place">
             <h2></h2>
 
@@ -69,7 +70,8 @@
             <p>Time: <span class="time"></span></p>
             <p>Notes: <span class="notes"></span></p>
           </div>
-        <!-- </div> -->
+        </div>
+      </div>
     </div>
   </body>
 </html>

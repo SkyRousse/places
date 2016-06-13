@@ -19,12 +19,12 @@ $(document).ready(function() {
 
     var newPlace = new Place(inputtedLocation, inputtedLandmark, inputtedTime, inputtedNotes);
 
-    $("ul.placeslist").append("<li><span class ='place'>" + newPlace.location + "</span></li>");
+    $("ul.placeslist").append("<li class='list-group-item'><span class ='place'>" + newPlace.location + "</span></li>");
     $("#places-output").show();
 
     $(".place").last().click(function()  {
       $("#show-place").show();
-      $("#show-place h2").text(newPlace.location);
+      $("#show-place h2").text(newPlace.location + " Details:");
       $(".location").text(newPlace.location);
       $(".landmark").text(newPlace.landmark);
       $(".time").text(newPlace.time);
