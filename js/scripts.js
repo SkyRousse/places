@@ -19,6 +19,21 @@ $(document).ready(function() {
 
     var newPlace = new Place(inputtedLocation, inputtedLandmark, inputtedTime, inputtedNotes);
 
+    $("ul.placeslist").append("<li><span class ='place'>" + newPlace.location + "</span></li>");
+    $("#places-output").show();
 
+    $(".place").last().click(function()  {
+      $("#show-place").show();
+      $("#show-place h2").text(newPlace.location);
+      $(".location").text(newPlace.location);
+      $(".landmark").text(newPlace.landmark);
+      $(".time").text(newPlace.time);
+      $(".notes").text(newPlace.notes);
+    });
+
+    $("input#location").val("");
+    $("input#landmark").val("");
+    $("input#time").val("");
+    $("input#notes").val("");
   });
 });
