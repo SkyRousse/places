@@ -47,7 +47,7 @@ None.  But we haven't really tested much, so if you find anything, let us know a
 
 ## Support and contact details
 
-Come by during class if you have questions.
+email Sky at: skyrousse@gmail.com
 
 ## Technologies Used
 
